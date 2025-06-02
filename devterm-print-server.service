@@ -1,0 +1,9 @@
+[Unit]
+Description=DevTerm printing service
+
+[Service]
+ExecStart=/root/common-lisp/devterm-print-server/start.sh &
+Type=forking
+
+[Install]
+WantedBy=multi-user.target
